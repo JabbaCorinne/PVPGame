@@ -1,4 +1,4 @@
-public class Paladin extends PlayerCharacter implements TankHealer {
+public class Paladin extends PlayerCharacter implements Tank, Healer {
 
    private int wisdom;
    private int constitution;

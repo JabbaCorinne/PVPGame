@@ -2,16 +2,17 @@ public class Party {
     protected Tank tank;
     protected Range range;
     protected Healer healer;
-    protected TankHealer tankHealer;
+    //protected TankHealer tankHealer;
     public String teamName;
     //protected boolean full;
     protected boolean check;
 
-    Party(String teamName, Tank t, Healer h, Range r, TankHealer th) {
+    //UPDATE ACCORDING TO THE CHARACTERS SELECTED
+    Party(String teamName, Tank t, Healer h, Range r) {
         tank = t;
         healer = h;
         range = r;
-        tankHealer = th;
+        //tankHealer = th;
     }
 
     public boolean check(PlayerCharacter pc) {

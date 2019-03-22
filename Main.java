@@ -12,9 +12,10 @@ public class Main {
         Fighter Frank = new Fighter("Frank");
         System.out.printf("There are currently %d players in the game.\n",players.size());
 
-        players.add(new Priest("Pranav"));
-        Priest Pranav = new Priest("Pranav");
-        System.out.printf("There are currently %d players in the game.\n",players.size());
+        //USER MUST CHOOSE 3 CHARACTERS, SO EITHER PRIEST OR PALADIN MUST GO
+        //players.add(new Priest("Pranav"));
+        //Priest Pranav = new Priest("Pranav");
+        //System.out.printf("There are currently %d players in the game.\n",players.size());
 
         players.add(new Mage("Maggie"));
         Mage Maggie = new Mage("Maggie");
@@ -24,7 +25,8 @@ public class Main {
         Paladin Pumpernickel = new Paladin("Pumpernickel");
         System.out.printf("There are currently %d players in the game.\n",players.size());
 
-        Party user= new Party("Corinne", Frank, Pranav, Maggie, Pumpernickel);
+        //FILL OUT BASED UPON ORDER SPECIFIED IN PARTY CLASS CONSTRUCTOR
+        Party user= new Party("Corinne", Frank, Pumpernickel, Maggie);
 
         ArrayList<Spell> spellBook= new ArrayList<Spell>();
         //insert values and spell name below
