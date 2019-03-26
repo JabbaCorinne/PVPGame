@@ -35,9 +35,11 @@ public class Main {
         
         //IN-CLASS WAY OF CODING THIS IS SHOWN BELOW
         
+        
 //        Tank t;
 //        Range r;
 //        Healer h;
+        //YOU COULD SET THESE EQUAL TO NULL IN ORDER TO GET RID OF ERRORS
         
           // friends=new Party();
         
@@ -54,6 +56,12 @@ public class Main {
 //                h=(Healer)x;
 //                   friends.addPlayer(h);
 //            }
+        
+        
+//         foes=new Party();
+//         foes.addPlayer((Tank) new Paladin("Evil Knight"));
+//         foes.addPlayer(new Priest("Dirty Bubble"));
+//         foes.addPlayer(new Mage("Mean Mage"));
         
               
 
