@@ -6,6 +6,12 @@ public class Party {
     public String teamName;
     //protected boolean full;
     protected boolean check;
+    
+    
+    //IN-CLASS SUGGESTIONS FOR HOW TO CODE THIS
+//     public Party(){
+//     }
+  
 
     //ORDER CAN BE REARRANGED, BUT YOU ALWAYS NEED ONE OF EACH TYPE (t, r, and h)
     Party(String teamName, Tank t, Range r, Healer h) {
