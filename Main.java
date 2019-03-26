@@ -28,8 +28,8 @@ public class Main {
         Paladin Pumpernickel = new Paladin("Pumpernickel");
         System.out.printf("There are currently %d players in the game.\n",players.size());
 
-        //FILL OUT BASED UPON ORDER SPECIFIED IN PARTY CLASS CONSTRUCTOR (here, the order is party name, fighter name, healer name, range name)
-        Party user= new Party("Corinne", Frank, Pumpernickel, Maggie);
+        //FILL OUT BASED UPON ORDER SPECIFIED IN PARTY CLASS CONSTRUCTOR (here, the order is party name, fighter name, range name, healer name)
+        Party user= new Party("Corinne", Frank, Maggie, Pumpernickel);
 
         ArrayList<Spell> spellBook= new ArrayList<Spell>();
         //insert values and spell name below
