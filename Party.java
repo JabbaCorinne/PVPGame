@@ -7,11 +7,11 @@ public class Party {
     //protected boolean full;
     protected boolean check;
 
-    //UPDATE ACCORDING TO THE CHARACTERS SELECTED
-    Party(String teamName, Tank t, Healer h, Range r) {
+    //ORDER CAN BE REARRANGED, BUT YOU ALWAYS NEED ONE OF EACH TYPE (t, r, and h)
+    Party(String teamName, Tank t, Range r, Healer h) {
         tank = t;
-        healer = h;
         range = r;
+        healer = h;
         //tankHealer = th;
     }
 
