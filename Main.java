@@ -30,6 +30,32 @@ public class Main {
 
         //FILL OUT BASED UPON ORDER SPECIFIED IN PARTY CLASS CONSTRUCTOR (here, the order is party name, fighter name, range name, healer name)
         Party user= new Party("Corinne", Frank, Maggie, Pumpernickel);
+      
+        
+        
+        //IN-CLASS WAY OF CODING THIS IS SHOWN BELOW
+        
+//        Tank t;
+//        Range r;
+//        Healer h;
+        
+          // friends=new Party();
+        
+//        for (PlayerCharacter x : players) {
+//            if (x instanceof Tank){
+//                 t=(Tank)x;
+//                   friends.addPlayer(t);
+//            }
+//            else if (x instanceof Range){
+//                 r=(Range)x;
+//                   friends.addPlayer(r);
+//            }
+//            else if (x instanceof Healer){
+//                h=(Healer)x;
+//                   friends.addPlayer(h);
+//            }
+        
+              
 
         ArrayList<Spell> spellBook= new ArrayList<Spell>();
         //insert values and spell name below
@@ -38,15 +64,7 @@ public class Main {
         ArrayList<Weapon> armory= new ArrayList<Weapon>();
         //insert values and weapon name below
         armory.add(new Weapon(3,1, 6,false,"Dagger"));
-
-
-        /// how to ask for an instance of an object is shown below
-//        if(playerF1 instanceof Fighter) {
-//            System.out.println("Player A is a fighter");
-//        } else {
-//            System.out.println("Player is not a fighter");
-//        }
-
+            
         for (PlayerCharacter x: players) {
             if (x instanceof Fighter|| x instanceof Priest ||x instanceof Paladin|| x instanceof Mage) {
                 System.out.println();
@@ -54,12 +72,23 @@ public class Main {
             }
         }
 
-        //playerF1.constitution= 1000000;
-            // now that constitution is private, this doesn't work, which is intentional
+        
+        //OTHER NOTES
+         
+                    //playerF1.constitution= 1000000;
+                        // now that constitution is private, this doesn't work, which is intentional
 
-        //PlayerCharacter playerX= new PlayerCharacter();
-            // don't want to be able to use this
-
+                    //PlayerCharacter playerX= new PlayerCharacter();
+                        // don't want to be able to use this
+        
+        
+                /// how to ask for an instance of an object is shown below
+//              if(playerF1 instanceof Fighter) {
+//                  System.out.println("Player A is a fighter");
+//              } else {
+//                  System.out.println("Player is not a fighter");
+//                  }
+       
 
     }
 }
